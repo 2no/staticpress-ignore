@@ -1,0 +1,23 @@
+{
+    "name": "2no/staticpress-ignore",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "2no",
+            "email": "kazunori.ninomiya@gmail.com"
+        }
+    ],
+    "require": {},
+    "require-dev": {
+        "wp-coding-standards/wpcs": "2014-12-11",
+        "neronmoon/scriptsdev": "dev-master"
+    },
+    "scripts-dev": {
+        "post-install-cmd": [
+            "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs"
+        ],
+        "post-update-cmd": [
+            "vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs"
+        ]
+    }
+}
